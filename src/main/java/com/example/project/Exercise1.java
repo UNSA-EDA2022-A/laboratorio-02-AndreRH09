@@ -1,4 +1,4 @@
-package com.example.project;
+package Lab2;
 
 import java.util.Scanner;
 
@@ -15,7 +15,23 @@ public class Exercise1 {
 	}
 
 	public boolean esCuadradoPerfecto(int numero) {
-
-		return false;
+            
+            if(numero <=0)
+                return false;
+            else{
+                System.out.println(numCuadrado((int) Math.sqrt(numero)));
+               if(numCuadrado((int) Math.sqrt(numero)) == numero)
+                   return true;
+            }
+            return false;
 	}
+        
+        public int numCuadrado(int n) {
+            
+            if(n == 1)
+                return 1;
+            else{
+                return  2 * n - 1 +numCuadrado(n - 1);
+            }
+        }
 }
