@@ -1,4 +1,4 @@
-package Lab2;
+package com.example.project;
 
 import java.util.Scanner;
 
